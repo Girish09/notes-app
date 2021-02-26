@@ -3,20 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
-    
-    <div>
-        <a href="/index.html"> Home</a>
+    <div class="header">
+        <div class="container">
+            <h1 class="header__title">Notes App</h1>
+            <h2 class="header__subtitle">Takes notes and never forget</h2>
+        </div>
     </div>
 
+    <div class="actions">
+        <div class="actions__container actions__container--spaced">
+            <a href="/index.html"> Home</a>
+            <span id="brief">General</span>
 
-    <input id = 'note-title' type="text" placeholder='Note Title'>
-    <span id="brief">General</span>
-    <textarea id = 'note-body' placeholder = 'Enter note text' name="" id="" cols="30" rows="10"></textarea>
+        </div>
+    </div>    
 
-    <button id="remove-note">Remove a note</button> 
+    <div class="container">
+        <input id = 'note-title' type="text" class="title-input" placeholder='Note Title'>
+        <textarea id='note-body' class="body-input" placeholder = 'Enter note text' name="" id="" cols="30" rows="10"></textarea>
+        <button id="remove-note" class="button">Remove a note</button>
+    </div>
+
+    
+     
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js" integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ==" crossorigin="anonymous"></script>
         <script src="notes-functions.js"></script>
         <script src="edit.js"></script>
